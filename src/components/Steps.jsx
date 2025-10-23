@@ -29,7 +29,7 @@ function Steps() {
   return (
     <div style={{ background: "white" }}>
       <div>
-        <h1 className="font-extrabold  p-10 flex justify-center items-center text-black text-4xl mb-10">
+        <h1 className="font-extrabold p-10 flex justify-center items-center text-black text-4xl mb-10">
           Get started in three easy steps
         </h1>
       </div>
@@ -56,9 +56,9 @@ function Steps() {
           </div>
         ))}
 
-        <div className="flex items-center justify-end w-full">
+        <div className="flex items-center justify-center md:justify-end w-full">
           <Link to="/signup">
-            <button className="bg-[#f59cab] text-white p-3 md:p-4 rounded-full w-full md:w-[500px] cursor-pointer max-w-[90vw] text-sm md:text-base">
+            <button className="bg-[#f59cab] text-white px-30 py-5 md:px-50 md:py-5 rounded-full w-full max-w-[90vw] cursor-pointer text-sm md:text-base">
               Get Started
             </button>
           </Link>
@@ -69,24 +69,3 @@ function Steps() {
 }
 
 export default Steps;
-
-{
-  /* <div className="rounded-xl start px-4 py-5 bg-white text-black w-[500px]">
-          <div className="flex items-center gap-1">
-            <img src={search} alt="" width="40px" />
-            <h3 className="text-2xl font-bold">Connect</h3>
-          </div>
-          <span className="block max-w-[300px]">
-            Send messages to review and negotiate with matched care givers
-          </span>
-        </div>
-        <div className="rounded-xl start px-4 py-5 bg-white text-black w-[500px]">
-          <div className="flex items-center gap-1">
-            <img src={connect} alt="" width="40px" />
-            <h3 className="text-2xl font-bold">Hire</h3>
-          </div>
-          <span className="block max-w-[300px]">
-            Conduct a comprehensive screening of preferred caregiver and hire
-          </span>
-        </div> */
-}

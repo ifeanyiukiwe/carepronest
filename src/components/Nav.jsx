@@ -107,6 +107,12 @@ function Nav() {
             </div>
             <div
               className="text-lg font-medium text-[#17865f] cursor-pointer hover:opacity-80 text-center w-full"
+              onClick={() => handleMobileNav("/career")}
+            >
+              Career
+            </div>
+            <div
+              className="text-lg font-medium text-[#17865f] cursor-pointer hover:opacity-80 text-center w-full"
               onClick={() => handleMobileNav("/login")}
             >
               Log In
