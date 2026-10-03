@@ -1,16 +1,63 @@
-# React + Vite
+# CareProNest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A care-matching platform connecting families who need care with professional caregivers across the UK. Families can search for care by location, and caregivers can create a profile and apply for care jobs.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Location-based care search** using UK counties and their local authority areas
+- **Two clear user journeys:** "I need a caregiver" and "I want a care job"
+- **Three-step process:** Register, Connect, Hire
+- **Caregiver job application form**, including years of experience and CV upload
+- **Account pages** for sign-up and login
+- **Multi-page navigation** with React Router
+- **Accessible, easy-to-use interface**, designed with older users in mind
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Front end:** React 19, JavaScript (ES6+)
+- **Routing:** React Router
+- **Styling:** Tailwind CSS v4
+- **Tooling:** Vite, ESLint
 
-## Expanding the ESLint configuration
+## Pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Route | Purpose |
+|---|---|
+| `/` | Home page with location search and the three-step process |
+| `/career` | Choose a path: find care or find a care job |
+| `/apply` | Caregiver job application form |
+| `/signup` | Create an account |
+| `/login` | Sign in |
+
+## Getting Started
+
+### Prerequisites
+- Node.js (LTS version) and npm
+
+### Installation
+1. Clone the repository:
+   `git clone https://github.com/ifeanyiukiwe/carepronest.git`
+2. Move into the project folder:
+   `cd carepronest`
+3. Install dependencies:
+   `npm install`
+4. Start the development server:
+   `npm run dev`
+5. Open `http://localhost:5173` in your browser.
+
+## What I Learned
+
+- Structuring a multi-page React application with React Router
+- Designing clear user journeys for two different audiences
+- Building accessible forms and layouts for users who may be less confident with technology
+
+## Future Improvements
+
+- Connect forms to a back end and database
+- Add authentication and caregiver profiles
+- Add messaging between families and caregivers
+
+## Author
+
+**Ojo Ifeanyi Ukiwe**
+[GitHub](https://github.com/ifeanyiukiwe) · [LinkedIn](https://linkedin.com/in/ifeanyiukiwe)
